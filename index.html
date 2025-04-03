@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="español">
+<head>
+    <meta charset="UTF=8">
+    <meta name="viewport" content="width-device-width", initial-scale="1.0">
+    <title>mi pagina con Bootstrap</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" defer></script>
+    <style>
+        body{
+            background-color: rgb(0, 0, 0);
+            color: aliceblue;
+        }
+        .carousel-item img{
+            height: 500px;
+            object-fit: cover;
+        }
+        .footer{
+            background-color: rgb(0, 0, 0);
+            padding: 20px;
+            text-align: center;
+        }
+        .main{
+            background-color: rgb(15, 76, 78);
+            text-align: center;
+            padding: 30px;
+        }
+        .texto{
+            background-color: rgb(255, 255, 255);
+        }
+    </style>
+</head>
+<body>
+    <header class="container mt-4">
+        <h1 class="text-center">Trogliero Tomas</h1>
+        <div id="carouselExampleDark" class="carousel carousel-dark slide">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-bs-interval="10000">
+                <img src="assets/img/tetera1.JPG" class="d-block w-100" alt="tetera1">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5 class="texto">1. Oso Panda Gigante</h5>
+                  <p class="texto">Causa del peligro: Pérdida de hábitat por la deforestación y la reducción del bambú, su principal alimento.</p>
+                </div>
+              </div>
+              <div class="carousel-item" data-bs-interval="2000">
+                <img src="assets/img/tetera2.JPG" class="d-block w-100" alt="tetera2">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5 class="texto">2.Ajolote</h5>
+                  <p class="texto"> Los ajolotes se están extinguiendo por contaminación del agua, destrucción de su hábitat en los lagos de México y captura ilegal para el comercio y la investigación.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="assets/img/tetera3.JPG" class="d-block w-100" alt="tetera3">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5 class="texto">3.Mandril</h5>
+                  <p class="texto">  Debido a que los mandriles viven en grupos tan grandes, gran parte de su población puede caer en el comercio en auge en una sola cacería</p>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+    </header>
+    <main class="main">
+        <h2>Fotos de los animales en peligro de extinción</h2>
+        <p>Estos animales son claves para el ecosistema y su desaparición afectaría gravemente la biodiversidad.</p>
+    </main>
+    <footer class="footer">
+        <p>La informacion fue sacada de nationalgeographic</p>
+        <p>Contacto: 
+        <a href="https://www.nationalgeographic.com.es/mundo-animal/animales-peligro-extincion_12536" target="_blank" title="contacto referido a donde se tomó la información">https://www.nationalgeographic</a>
+        </p>
+    </footer>
+</body>
+</html>
